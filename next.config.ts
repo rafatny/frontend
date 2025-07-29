@@ -14,10 +14,17 @@ const nextConfig: NextConfig = {
       // Supabase CDN
       {
         protocol: 'https',
-        hostname: '**.supabase.co',
+        hostname: '*.supabase.co',
         port: '',
         pathname: '/storage/v1/object/public/**',
-      }
+      },
+      // ibb.co
+      {
+        protocol: 'https',
+        hostname: 'ibb.co',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
 };
