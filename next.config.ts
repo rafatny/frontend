@@ -21,19 +21,19 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/storage/v1/object/public/**',
       },
-      // ImgBB - página raiz
+      // ImgBB - página raiz (liberar qualquer caminho)
       {
         protocol: 'https',
         hostname: 'ibb.co',
         port: '',
-        pathname: '/uploads/**',
+        pathname: '/**',
       },
-      // ImgBB - CDN real onde as imagens são servidas
+      // ImgBB - CDN real (liberar qualquer caminho)
       {
         protocol: 'https',
         hostname: 'i.ibb.co',
         port: '',
-        pathname: '/uploads/**',
+        pathname: '/**',
       },
     ],
   },
